@@ -36,11 +36,3 @@ class QuesLevel(nn.Module):
         return ques_att_q, img_att_q
 
 
-if __name__ == '__main__':
-    qlevel = QuesLevel(512, 2, 0.5, 512, 26, 'Alternating')
-    word_feat = torch.randn((10, 26, 512))
-    img = torch.randn((10, 196, 512))
-    mask = torch.zeros((10, 26), dtype=torch.bool)
-    x = qlevel(word_feat, img, mask)
-    print(x[0].size())
-

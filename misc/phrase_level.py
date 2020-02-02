@@ -51,10 +51,3 @@ class PhraseLevel(nn.Module):
 
         return ques_att_p, img_att_p
 
-
-if __name__ == '__main__':
-    plevel = PhraseLevel(512, 26, 'Alternating')
-    word_feat = torch.randn((10, 26, 512))
-    img = torch.randn((10, 196, 512))
-    mask = torch.zeros((10, 26), dtype=torch.bool)
-    x = plevel(word_feat, img, mask)

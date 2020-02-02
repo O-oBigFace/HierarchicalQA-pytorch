@@ -128,12 +128,3 @@ class DataLoader:
         batch_data['answers'] = ans_batch
 
         return batch_data
-
-
-if __name__ == '__main__':
-    dl = DataLoader("../data/cocoqa_data_img_vgg_train.h5",
-                    "../data/cocoqa_data_img_vgg_test.h5",
-                    "../data/cocoqa_data_prepro.h5",
-                    "../data/backup/cocoqa_data_prepro.json")
-
-    print(dl.get_batch(0, 32))

@@ -28,12 +28,3 @@ class MYDataset(Dataset):
 
         return sample
 
-
-if __name__ == '__main__':
-    myd = MYDataset("../data/vqa_data_img_vgg_val.h5", "../data/cocoqa_prepro_val.h5")
-    dataloader = DataLoader(myd, batch_size=4, shuffle=True)
-
-    for i_batch, sample_batched in enumerate(dataloader):
-        print(i_batch, sample_batched['image'].size(), sample_batched['question'].size())
-        print(sample_batched)
-        break
