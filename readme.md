@@ -1,10 +1,12 @@
 # HierarchicalQA-pytorch 运行指南
 论文[Hierarchical Question-Image Co-Attention for Visual Question Answering](http://papers.nips.cc/paper/6202-hierarchical-question-image-co-attention-for-visual-question-answering)的pytorch实现。
 
-## 需要的环境
+## 需要的环境（暂时）
 > python3
+>
 > torch7
-> luajit
+>
+>luajit
 
 ## 数据准备
 ### 数据集
@@ -34,6 +36,7 @@ python版的caffe安装屡次失败，所以这里使用了torch7版本的caffe�
 luajit img_process_vgg.lua --image_root [数据集coco的路径]
 ```
 这一步需要时间可能会很长，具体由你GPU的算力决定。
+
 运行结束后，数据处理部分的代码也就完成了。
 
 ## 模型训练（更新中）
@@ -51,4 +54,4 @@ python train.py [指定的参数]
 ```
 
 ### 查看结果
-训练时，系统会自动将运行结果最优的模型存储起来，并且存储整个过程的loss以及accuracy。可在`save`文件夹中查看
+训练时，系统会自动将运行结果最优的模型存储起来，并且存储整个过程的loss以及accuracy。可在`save`文件夹中查看。
