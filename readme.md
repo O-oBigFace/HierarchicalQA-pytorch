@@ -1,4 +1,4 @@
-# HierarchicalVQA-pytorch 运行指南
+# HierarchicalQA-pytorch 运行指南
 论文[Hierarchical Question-Image Co-Attention for Visual Question Answering](http://papers.nips.cc/paper/6202-hierarchical-question-image-co-attention-for-visual-question-answering)的pytorch实现。
 
 ## 需要的环境
