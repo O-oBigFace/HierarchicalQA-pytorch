@@ -26,7 +26,7 @@ cd prepro
 ### 处理cocoqa的数据
 ```bash
 python cocoqa_raw_process.py
-python cocoqa_raw_process.py
+python cocoqa_prepro.py
 ```
 
 ### 利用caffe的VGG处理图像数据（待修改为python版本）
