@@ -36,7 +36,7 @@ class PhraseLevel(nn.Module):
         unigram = self.conv_unigram(word_feat_per)
 
         bigram = self.conv_bigram(word_feat_per)
-        bigram = bigram.narrow(2, 0, 26)
+        bigram = bigram.narrow(2, 0, self.seq_length)
 
         trigram = self.conv_trigram(word_feat_per)
 
